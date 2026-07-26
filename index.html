@@ -14,29 +14,22 @@ h1{margin:0;font-size:22px;letter-spacing:-.3px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;padding:20px 24px 60px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;position:relative;display:flex;flex-direction:column;transition:.15s}
 .card:hover{border-color:var(--acc);transform:translateY(-2px)}
-.rank{position:absolute;top:10px;left:10px;background:rgba(0,0,0,.6);padding:2px 9px;border-radius:20px;font-weight:700;font-size:12px;z-index:2}
-.score-badge{position:absolute;top:10px;right:10px;background:var(--acc);color:#fff;padding:3px 10px;border-radius:20px;font-weight:700;font-size:13px;z-index:2}
-.thumb{width:100%;height:150px;object-fit:cover;background:var(--card2);display:block}
-.thumb.ph{display:flex}
 .body{padding:14px}
+.chead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.rank{background:var(--card2);padding:2px 9px;border-radius:20px;font-weight:700;font-size:12px;color:var(--dim)}
+.score-badge{background:var(--acc);color:#fff;padding:3px 11px;border-radius:20px;font-weight:700;font-size:13px}
 .title{color:var(--txt);text-decoration:none;font-weight:600;font-size:15px;display:block;margin-bottom:12px;line-height:1.35}
 .title:hover{color:var(--acc)}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
 .kpi{background:var(--card2);border-radius:8px;padding:7px 6px;text-align:center}
 .kpi b{display:block;font-size:14px}
 .kpi span{color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:.4px}
 .kpi.hot b{color:var(--hot)}.kpi.warm b{color:var(--warm)}.kpi.mild b{color:var(--mild)}
-.bars{display:flex;flex-direction:column;gap:5px;border-top:1px solid var(--line);padding-top:11px}
-.bar{display:grid;grid-template-columns:74px 1fr 34px;align-items:center;gap:8px;font-size:11px}
-.bl{color:var(--dim);text-transform:capitalize}
-.bt{background:var(--card2);height:6px;border-radius:4px;overflow:hidden}
-.bt i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),#8fb0ff)}
-.bv{color:var(--dim);text-align:right;font-variant-numeric:tabular-nums}
 footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top:1px solid var(--line)}
 </style></head><body>
 <header>
   <h1>🧪 Kalodata — Potential Products</h1>
-  <div class="sub">Health · Nutrition &amp; Wellness · US · 30d · filter: growth&gt;0, payout≥$3 · 30 sản phẩm · gen 2026-07-26 22:37</div>
+  <div class="sub">Health · Nutrition &amp; Wellness · US · 30d · filter: growth&gt;0, payout≥$3 · 30 sản phẩm · gen 2026-07-26 22:56</div>
   <div class="controls">
     <span style="color:var(--dim);font-size:12px">Sort:</span>
     <button data-sort="score" class="on">Score</button>
@@ -49,10 +42,8 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
 <div class="grid" id="grid">
 
 <div class="card" data-score="86.4" data-growth="212.3" data-creators="116.0" data-rev="83710.0">
-  <div class="rank">#1</div>
-  <div class="score-badge">86.4</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#1</span><span class="score-badge">86.4</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732405947193332261&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Apothékary Fuel to Burn Duo - Metabolic + Energy, NMN for NAD+ Support and Longevity Herbal Drops* | Made in the USA</a>
     <div class="kpis">
       <div class="kpi"><b>$65.00</b><span>price</span></div>
@@ -64,14 +55,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>116</b><span>creators</span></div>
       <div class="kpi"><b>92%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:73%"></i></span><span class="bv">0.73</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="83.6" data-growth="184.3" data-creators="280.0" data-rev="127620.0">
-  <div class="rank">#2</div>
-  <div class="score-badge">83.6</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#2</span><span class="score-badge">83.6</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732376373883998234&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">YESNAP PeachPout Creatine for Women, 5g Creatine Monohydrate + 5g Collagen Powder, Myo-Inositol &amp; BCAA, MACA, Hyaluronic Acid, Delicious Peach Flavor, 30 Packets, All-in-One Women Wellness Supplement</a>
     <div class="kpis">
       <div class="kpi"><b>$29.99 - $42.85</b><span>price</span></div>
@@ -83,14 +71,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>280</b><span>creators</span></div>
       <div class="kpi"><b>83%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:98%"></i></span><span class="bv">0.98</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:76%"></i></span><span class="bv">0.76</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:65%"></i></span><span class="bv">0.65</span></div></div>
   </div>
 </div>
 <div class="card" data-score="83.0" data-growth="328.6" data-creators="19.0" data-rev="49890.0">
-  <div class="rank">#3</div>
-  <div class="score-badge">83.0</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#3</span><span class="score-badge">83.0</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732287599360709312&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Viternum Complex Capsules Supplement Multivitamin Nutrients Dietary Support 20 Capsulas Via Oral</a>
     <div class="kpis">
       <div class="kpi"><b>$49.99</b><span>price</span></div>
@@ -102,14 +87,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>19</b><span>creators</span></div>
       <div class="kpi"><b>98%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div></div>
   </div>
 </div>
 <div class="card" data-score="82.7" data-growth="314.8" data-creators="46.0" data-rev="37370.0">
-  <div class="rank">#4</div>
-  <div class="score-badge">82.7</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#4</span><span class="score-badge">82.7</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732271426081361956&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">[FOODOLOGY] Coleology Cutting Jelly 30days - Garcinia Cambogia (HCA), Chia Seeds Collagen, Hyaluronic Acid, Pomegranate Flavored 8.81 oz /10 Sticks</a>
     <div class="kpis">
       <div class="kpi"><b>$50.40</b><span>price</span></div>
@@ -121,14 +103,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>46</b><span>creators</span></div>
       <div class="kpi"><b>86%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:68%"></i></span><span class="bv">0.68</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div></div>
   </div>
 </div>
 <div class="card" data-score="82.4" data-growth="778.9" data-creators="392.0" data-rev="170970.0">
-  <div class="rank">#5</div>
-  <div class="score-badge">82.4</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#5</span><span class="score-badge">82.4</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732414244187574957&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Micro Ingredients Creatine Hydration for Women (Strawberry Flavor) - 5g Creatine + 5g Electrolytes + 2g Collagen, with Fiber, Probiotics, HA, Vitamin C and Biotin - No Gluten, No GMO | 30 Servings</a>
     <div class="kpis">
       <div class="kpi"><b>$30.00</b><span>price</span></div>
@@ -140,14 +119,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>392</b><span>creators</span></div>
       <div class="kpi"><b>66%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:78%"></i></span><span class="bv">0.78</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:75%"></i></span><span class="bv">0.75</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:65%"></i></span><span class="bv">0.65</span></div></div>
   </div>
 </div>
 <div class="card" data-score="81.2" data-growth="999.9" data-creators="271.0" data-rev="71380.0">
-  <div class="rank">#6</div>
-  <div class="score-badge">81.2</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#6</span><span class="score-badge">81.2</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732441717126369927&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">LeeFar Cutting Drops – Lymphatic-Focused Debloat Formula with Dandelion, Cleavers, Burdock &amp; Elderberry for Lymphatic Drainage, Bloat Relief, Digestive Comfort and Detox – Mango Dragonfruit Flavor, 30 Servings</a>
     <div class="kpis">
       <div class="kpi"><b>$15.99</b><span>price</span></div>
@@ -159,14 +135,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>271</b><span>creators</span></div>
       <div class="kpi"><b>75%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:72%"></i></span><span class="bv">0.72</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:75%"></i></span><span class="bv">0.75</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:65%"></i></span><span class="bv">0.65</span></div></div>
   </div>
 </div>
 <div class="card" data-score="80.8" data-growth="45.1" data-creators="48.0" data-rev="40310.0">
-  <div class="rank">#7</div>
-  <div class="score-badge">80.8</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#7</span><span class="score-badge">80.8</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732299983052509697&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">GoodMatter Good Vibes Mood &amp; Confidence Gummies Daily Vitality Support w Saffron Maca &amp; Ashwagandha 60ct Vegan Friendly Low Sugar Wild Berry Flavor</a>
     <div class="kpis">
       <div class="kpi"><b>$24.99 - $39.00</b><span>price</span></div>
@@ -178,14 +151,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>48</b><span>creators</span></div>
       <div class="kpi"><b>92%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:72%"></i></span><span class="bv">0.72</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:69%"></i></span><span class="bv">0.69</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div></div>
   </div>
 </div>
 <div class="card" data-score="79.6" data-growth="101.9" data-creators="11.0" data-rev="40350.0">
-  <div class="rank">#8</div>
-  <div class="score-badge">79.6</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#8</span><span class="score-badge">79.6</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732358307241235018&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">HIILEATHY Optimal Shilajit PRO MAX with K2 &amp; D3 - 60 Capsules - Premium Fulvic Acid &amp; 84+ Minerals for Immune Support, Energy &amp; Anti-Aging - USA Made</a>
     <div class="kpis">
       <div class="kpi"><b>$27.99 - $67.98</b><span>price</span></div>
@@ -197,14 +167,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>11</b><span>creators</span></div>
       <div class="kpi"><b>86%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:87%"></i></span><span class="bv">0.87</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:69%"></i></span><span class="bv">0.69</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div></div>
   </div>
 </div>
 <div class="card" data-score="78.7" data-growth="999.9" data-creators="114.0" data-rev="46490.0">
-  <div class="rank">#9</div>
-  <div class="score-badge">78.7</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#9</span><span class="score-badge">78.7</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732441880305963655&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">【Leefar Cutting Bundle】Leefar Cutting Mix*1+Leefar Cutting Drops *1</a>
     <div class="kpis">
       <div class="kpi"><b>$31.99</b><span>price</span></div>
@@ -216,14 +183,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>114</b><span>creators</span></div>
       <div class="kpi"><b>50%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:50%"></i></span><span class="bv">0.50</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="78.5" data-growth="128.5" data-creators="91.0" data-rev="42730.0">
-  <div class="rank">#10</div>
-  <div class="score-badge">78.5</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#10</span><span class="score-badge">78.5</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732282283503816802&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Regeskr Cayenne Pepper Softgel Capsules – Herbal Wellness Formula with Vitamins E, D3 &amp; K2, Grape Seed, Hawthorn &amp; Beetroot Extract (240 Softgels / 1 Pouch)</a>
     <div class="kpis">
       <div class="kpi"><b>$23.09</b><span>price</span></div>
@@ -235,14 +199,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>91</b><span>creators</span></div>
       <div class="kpi"><b>99%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:92%"></i></span><span class="bv">0.92</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:69%"></i></span><span class="bv">0.69</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="78.4" data-growth="97.3" data-creators="69.0" data-rev="104880.0">
-  <div class="rank">#11</div>
-  <div class="score-badge">78.4</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#11</span><span class="score-badge">78.4</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732321905187525342&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">VivoNu Dietary Supplement for Men Energy Stamina Endurance Vitality Performance Support with Ashwagandha</a>
     <div class="kpis">
       <div class="kpi"><b>$28.90 - $76.90</b><span>price</span></div>
@@ -254,14 +215,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>69</b><span>creators</span></div>
       <div class="kpi"><b>95%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:87%"></i></span><span class="bv">0.87</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:75%"></i></span><span class="bv">0.75</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="77.4" data-growth="103.2" data-creators="74.0" data-rev="41360.0">
-  <div class="rank">#12</div>
-  <div class="score-badge">77.4</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#12</span><span class="score-badge">77.4</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732371850793554196&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Clear Whey Protein Isolate | Refreshing Juice-Like Protein Powder | 20g of Protein per Serving | 20 Servings Edible Supplements Dietary</a>
     <div class="kpis">
       <div class="kpi"><b>$50.00</b><span>price</span></div>
@@ -273,14 +231,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>74</b><span>creators</span></div>
       <div class="kpi"><b>92%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:88%"></i></span><span class="bv">0.88</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:69%"></i></span><span class="bv">0.69</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="77.3" data-growth="74.5" data-creators="126.0" data-rev="120250.0">
-  <div class="rank">#13</div>
-  <div class="score-badge">77.3</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#13</span><span class="score-badge">77.3</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732271199656645293&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Micro Ingredients Nattokinase 10,000FU Complex, 240 Vegetarian Capsules</a>
     <div class="kpis">
       <div class="kpi"><b>$29.99</b><span>price</span></div>
@@ -292,14 +247,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>126</b><span>creators</span></div>
       <div class="kpi"><b>92%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:82%"></i></span><span class="bv">0.82</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:76%"></i></span><span class="bv">0.76</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="77.2" data-growth="52.5" data-creators="443.0" data-rev="82300.0">
-  <div class="rank">#14</div>
-  <div class="score-badge">77.2</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#14</span><span class="score-badge">77.2</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732405944729965093&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Apothékary Power Trip - Energy and Longevity, NMN for NAD+ Support Liquid Herbal Drops* | Alcohol-Free, Non-GMO Project Verified, Certified Gluten-Free, PETA Certified Vegan &amp; Cruelty-Free, Third Party Tested, Made in the USA</a>
     <div class="kpis">
       <div class="kpi"><b>$39.00</b><span>price</span></div>
@@ -311,14 +263,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>443</b><span>creators</span></div>
       <div class="kpi"><b>89%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:75%"></i></span><span class="bv">0.75</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:73%"></i></span><span class="bv">0.73</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:65%"></i></span><span class="bv">0.65</span></div></div>
   </div>
 </div>
 <div class="card" data-score="76.7" data-growth="75.3" data-creators="93.0" data-rev="73150.0">
-  <div class="rank">#15</div>
-  <div class="score-badge">76.7</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#15</span><span class="score-badge">76.7</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732296274624156039&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">UnitChoice MEN’S ULTRA Natural Supplement | Plant-Based Nutrients | Natural Vitamins | 60 Count | With Damiana | Multivitamin</a>
     <div class="kpis">
       <div class="kpi"><b>$51.78</b><span>price</span></div>
@@ -330,14 +279,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>93</b><span>creators</span></div>
       <div class="kpi"><b>96%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:82%"></i></span><span class="bv">0.82</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:73%"></i></span><span class="bv">0.73</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="76.6" data-growth="171.6" data-creators="192.0" data-rev="168290.0">
-  <div class="rank">#16</div>
-  <div class="score-badge">76.6</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#16</span><span class="score-badge">76.6</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732132483625554791&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">The All In One Bundle</a>
     <div class="kpis">
       <div class="kpi"><b>$100.00</b><span>price</span></div>
@@ -349,14 +295,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>192</b><span>creators</span></div>
       <div class="kpi"><b>93%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:97%"></i></span><span class="bv">0.97</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:78%"></i></span><span class="bv">0.78</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:20%"></i></span><span class="bv">0.20</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="75.9" data-growth="455.3" data-creators="1130.0" data-rev="116200.0">
-  <div class="rank">#17</div>
-  <div class="score-badge">75.9</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#17</span><span class="score-badge">75.9</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732377320847086570&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">México x Salud 2-in-1 [Hydration + Immunity - Pepino Sandía | Cucumber Watermelon] Electrolytes Powder, Agua Fresca Drink Mix, Elderberry, Dairy &amp; Soy Free, Non-GMO, Gluten Free, Vegan, Low Calorie, 1g Sugar (15 Servings), Deals For You Days</a>
     <div class="kpis">
       <div class="kpi"><b>$21.10</b><span>price</span></div>
@@ -368,14 +311,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>1.1k</b><span>creators</span></div>
       <div class="kpi"><b>78%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:76%"></i></span><span class="bv">0.76</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:75%"></i></span><span class="bv">0.75</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:25%"></i></span><span class="bv">0.25</span></div></div>
   </div>
 </div>
 <div class="card" data-score="75.8" data-growth="61.1" data-creators="2060.0" data-rev="168990.0">
-  <div class="rank">#18</div>
-  <div class="score-badge">75.8</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#18</span><span class="score-badge">75.8</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732380620274962563&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Neuro Watermelon Energy &amp; Focus Gum (54 Pieces) - Sugar Free with Natural Caffeine, L-Theanine, Vitamin B12 &amp; B6 | No Jitters, No Crash</a>
     <div class="kpis">
       <div class="kpi"><b>$29.36</b><span>price</span></div>
@@ -387,14 +327,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>2.1k</b><span>creators</span></div>
       <div class="kpi"><b>85%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:78%"></i></span><span class="bv">0.78</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:78%"></i></span><span class="bv">0.78</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:25%"></i></span><span class="bv">0.25</span></div></div>
   </div>
 </div>
 <div class="card" data-score="75.2" data-growth="56.5" data-creators="84.0" data-rev="64129.99999999999">
-  <div class="rank">#19</div>
-  <div class="score-badge">75.2</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#19</span><span class="score-badge">75.2</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732298104924705344&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">TruHeight Sleep &amp; Grow Bundle - Complete Growth &amp; Wellness Support for Kids &amp; Teens - Calcium, Vitamin D, K, Melatonin, L-Theanine, Lemon Balm, Ashwagandha - Daytime Growth &amp; Nighttime Sleep Support</a>
     <div class="kpis">
       <div class="kpi"><b>$45.00</b><span>price</span></div>
@@ -406,14 +343,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>84</b><span>creators</span></div>
       <div class="kpi"><b>99%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:76%"></i></span><span class="bv">0.76</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:72%"></i></span><span class="bv">0.72</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="75.1" data-growth="999.9" data-creators="46.0" data-rev="52600.0">
-  <div class="rank">#20</div>
-  <div class="score-badge">75.1</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#20</span><span class="score-badge">75.1</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1730812618191901687&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">MuscleTech Leucine Peptide 185 - 84 Capsules (28 Servings)</a>
     <div class="kpis">
       <div class="kpi"><b>$99.99</b><span>price</span></div>
@@ -425,14 +359,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>46</b><span>creators</span></div>
       <div class="kpi"><b>91%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:5%"></i></span><span class="bv">0.05</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div></div>
   </div>
 </div>
 <div class="card" data-score="74.9" data-growth="140.0" data-creators="113.0" data-rev="92400.0">
-  <div class="rank">#21</div>
-  <div class="score-badge">74.9</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#21</span><span class="score-badge">74.9</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732123477195658135&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Magnesium Complex 10 Essential Magnesium Supplement 1200mg 120 Capsules SummerWins</a>
     <div class="kpis">
       <div class="kpi"><b>$49.98</b><span>price</span></div>
@@ -444,14 +375,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>113</b><span>creators</span></div>
       <div class="kpi"><b>98%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:93%"></i></span><span class="bv">0.93</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:74%"></i></span><span class="bv">0.74</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:20%"></i></span><span class="bv">0.20</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="74.8" data-growth="80.4" data-creators="425.0" data-rev="130500.0">
-  <div class="rank">#22</div>
-  <div class="score-badge">74.8</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#22</span><span class="score-badge">74.8</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732271147004629466&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Clear Protein Isolate</a>
     <div class="kpis">
       <div class="kpi"><b>$55.10 - $59.99</b><span>price</span></div>
@@ -463,14 +391,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>425</b><span>creators</span></div>
       <div class="kpi"><b>88%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:83%"></i></span><span class="bv">0.83</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:76%"></i></span><span class="bv">0.76</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:65%"></i></span><span class="bv">0.65</span></div></div>
   </div>
 </div>
 <div class="card" data-score="74.7" data-growth="308.7" data-creators="14.0" data-rev="37730.0">
-  <div class="rank">#23</div>
-  <div class="score-badge">74.7</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#23</span><span class="score-badge">74.7</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1729917579794485525&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Waterlipo diuretic 2x1</a>
     <div class="kpis">
       <div class="kpi"><b>$79.98</b><span>price</span></div>
@@ -482,14 +407,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>14</b><span>creators</span></div>
       <div class="kpi"><b>86%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:68%"></i></span><span class="bv">0.68</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:5%"></i></span><span class="bv">0.05</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div></div>
   </div>
 </div>
 <div class="card" data-score="74.6" data-growth="38.4" data-creators="96.0" data-rev="159620.0">
-  <div class="rank">#24</div>
-  <div class="score-badge">74.6</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#24</span><span class="score-badge">74.6</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1729490504574932517&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Apothékary Metabolic Duo - Metabolic + Normal Blood Sugar Support Herbal Drops* | Made in the USA</a>
     <div class="kpis">
       <div class="kpi"><b>$65.00</b><span>price</span></div>
@@ -501,14 +423,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>96</b><span>creators</span></div>
       <div class="kpi"><b>98%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:69%"></i></span><span class="bv">0.69</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:78%"></i></span><span class="bv">0.78</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="74.3" data-growth="43.9" data-creators="71.0" data-rev="76300.0">
-  <div class="rank">#25</div>
-  <div class="score-badge">74.3</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#25</span><span class="score-badge">74.3</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732220640941544343&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">HiPlus Men‘s Testosterone Boosters Power Complex Support with Shilajit,Maca,Ashwagandha &amp; Ginseng | Energy, Stamina &amp; Focus - Supports Testosterone 150/300 Softgels</a>
     <div class="kpis">
       <div class="kpi"><b>$33.88 - $39.98</b><span>price</span></div>
@@ -520,14 +439,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>71</b><span>creators</span></div>
       <div class="kpi"><b>98%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:72%"></i></span><span class="bv">0.72</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:73%"></i></span><span class="bv">0.73</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="74.2" data-growth="146.9" data-creators="94.0" data-rev="45300.0">
-  <div class="rank">#26</div>
-  <div class="score-badge">74.2</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#26</span><span class="score-badge">74.2</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1731762754245333134&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">G FUEL Energy Formula 2.0 Powdered Drink Mix | 40 Servings</a>
     <div class="kpis">
       <div class="kpi"><b>$35.99 - $38.99</b><span>price</span></div>
@@ -539,14 +455,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>94</b><span>creators</span></div>
       <div class="kpi"><b>98%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:94%"></i></span><span class="bv">0.94</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:20%"></i></span><span class="bv">0.20</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="74.0" data-growth="814.3" data-creators="95.0" data-rev="125770.0">
-  <div class="rank">#27</div>
-  <div class="score-badge">74.0</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#27</span><span class="score-badge">74.0</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1729408018284647422&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">RYSE Godzilla Pre Workout Powder - Noel Deyzel Signature - 400mg Caffeine, High-Stim Energy Supplement with Beta Alanine - 40 Servings</a>
     <div class="kpis">
       <div class="kpi"><b>$56.99</b><span>price</span></div>
@@ -558,14 +471,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>95</b><span>creators</span></div>
       <div class="kpi"><b>90%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:76%"></i></span><span class="bv">0.76</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:5%"></i></span><span class="bv">0.05</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="73.7" data-growth="79.6" data-creators="41.0" data-rev="49990.0">
-  <div class="rank">#28</div>
-  <div class="score-badge">73.7</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#28</span><span class="score-badge">73.7</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1731571970072548086&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">BIQ500ml Natural Energy Booster – Borojo &amp; Guarana Blend – Daily Liquid Supplement for Focus &amp; Vitality</a>
     <div class="kpis">
       <div class="kpi"><b>$39.99</b><span>price</span></div>
@@ -577,14 +487,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>41</b><span>creators</span></div>
       <div class="kpi"><b>98%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:83%"></i></span><span class="bv">0.83</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:70%"></i></span><span class="bv">0.70</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:20%"></i></span><span class="bv">0.20</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div></div>
   </div>
 </div>
 <div class="card" data-score="73.2" data-growth="120.0" data-creators="143.0" data-rev="42390.0">
-  <div class="rank">#29</div>
-  <div class="score-badge">73.2</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#29</span><span class="score-badge">73.2</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1731784303635501691&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Nurse Yoni Inner Harmony – Feminine Moisture &amp; Balance Herbal Capsules</a>
     <div class="kpis">
       <div class="kpi"><b>$27.34</b><span>price</span></div>
@@ -596,14 +503,11 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>143</b><span>creators</span></div>
       <div class="kpi"><b>98%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:90%"></i></span><span class="bv">0.90</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:69%"></i></span><span class="bv">0.69</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:20%"></i></span><span class="bv">0.20</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 <div class="card" data-score="73.1" data-growth="35.6" data-creators="131.0" data-rev="66000.0">
-  <div class="rank">#30</div>
-  <div class="score-badge">73.1</div>
-  <div class="thumb ph"></div>
   <div class="body">
+    <div class="chead"><span class="rank">#30</span><span class="score-badge">73.1</span></div>
     <a class="title" href="https://www.kalodata.com/product/detail?id=1732261639981666950&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-05-30%22%2C%222026-06-28%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">BetterAlt Energy Pro Sticks | Daily Energy Support | 6 Ayurvedic Powerhouses | 100% Natural | No Added Refined Sugar | 3rd Party Lab Tested | 30 Sticks</a>
     <div class="kpis">
       <div class="kpi"><b>$39.99 - $79.99</b><span>price</span></div>
@@ -615,7 +519,6 @@ footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top
       <div class="kpi"><b>131</b><span>creators</span></div>
       <div class="kpi"><b>94%</b><span>video rev</span></div>
     </div>
-    <div class="bars"><div class="bar"><span class="bl">growth</span><span class="bt"><i style="width:68%"></i></span><span class="bv">0.68</span></div><div class="bar"><span class="bl">rev</span><span class="bt"><i style="width:72%"></i></span><span class="bv">0.72</span></div><div class="bar"><span class="bl">recency</span><span class="bt"><i style="width:45%"></i></span><span class="bv">0.45</span></div><div class="bar"><span class="bl">video_share</span><span class="bt"><i style="width:100%"></i></span><span class="bv">1.00</span></div><div class="bar"><span class="bl">niche</span><span class="bt"><i style="width:85%"></i></span><span class="bv">0.85</span></div></div>
   </div>
 </div>
 </div>

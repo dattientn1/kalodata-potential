@@ -1,543 +1,98 @@
 <!doctype html><html lang="vi"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Kalodata — Potential Products</title>
+<title>Kalodata · Health niche · 5 sản phẩm tiềm năng</title>
 <style>
-:root{--bg:#0b0e14;--card:#151a24;--card2:#1b2230;--line:#232b3a;--txt:#e6ebf2;--dim:#8b96a8;--acc:#5b8cff;--hot:#ff5b6e;--warm:#ffb03a;--mild:#5bd6a0}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-header{padding:28px 24px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,14,20,.92);backdrop-filter:blur(8px);z-index:10}
-h1{margin:0;font-size:22px;letter-spacing:-.3px}
-.sub{color:var(--dim);margin-top:4px;font-size:13px}
-.controls{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;align-items:center}
-.controls button{background:var(--card2);color:var(--txt);border:1px solid var(--line);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:13px}
-.controls button.on{background:var(--acc);border-color:var(--acc);color:#fff}
-.controls input{background:var(--card2);color:var(--txt);border:1px solid var(--line);padding:6px 10px;border-radius:8px;width:180px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;padding:20px 24px 60px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;position:relative;display:flex;flex-direction:column;transition:.15s}
-.card:hover{border-color:var(--acc);transform:translateY(-2px)}
-.body{padding:14px}
-.chead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
-.rank{background:var(--card2);padding:2px 9px;border-radius:20px;font-weight:700;font-size:12px;color:var(--dim)}
-.score-badge{background:var(--acc);color:#fff;padding:3px 11px;border-radius:20px;font-weight:700;font-size:13px}
-.title{color:var(--txt);text-decoration:none;font-weight:600;font-size:15px;display:block;margin-bottom:12px;line-height:1.35}
-.title:hover{color:var(--acc)}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.kpi{background:var(--card2);border-radius:8px;padding:7px 6px;text-align:center}
-.kpi b{display:block;font-size:14px}
-.kpi span{color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:.4px}
-.kpi.hot b{color:var(--hot)}.kpi.warm b{color:var(--warm)}.kpi.mild b{color:var(--mild)}
-footer{color:var(--dim);text-align:center;padding:20px;font-size:12px;border-top:1px solid var(--line)}
+*{box-sizing:border-box}body{margin:0;background:#0b0d12;color:#e6e8ee;font:15px/1.5 -apple-system,Segoe UI,Roboto,sans-serif;padding:28px}
+h1{font-size:22px;margin:0 0 4px}.sub{color:#8b93a7;margin:0 0 22px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.card{position:relative;background:#151924;border:1px solid #232838;border-radius:14px;padding:18px 18px 14px}
+.rk{position:absolute;top:14px;left:16px;font-weight:700;color:#5b6478;font-size:13px}
+.sc{position:absolute;top:12px;right:14px;background:#1f6feb22;color:#5b9bff;border:1px solid #244; padding:3px 9px;border-radius:20px;font-weight:700;font-size:13px}
+.nm{display:block;margin:22px 0 14px;color:#fff;font-weight:600;text-decoration:none;font-size:15.5px;line-height:1.35}
+.nm:hover{color:#5b9bff}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}
+.kpis div{display:flex;justify-content:space-between;border-bottom:1px solid #1d2230;padding-bottom:5px}
+.kpis span{color:#8b93a7;font-size:12.5px}.kpis b{font-weight:600}
+.up{color:#3fb950}
+footer{color:#5b6478;font-size:12px;margin-top:24px}
 </style></head><body>
-<header>
-  <h1>🧪 Kalodata — Potential Products</h1>
-  <div class="sub">Health · Nutrition &amp; Wellness · US · 30d · filter: growth&gt;0, payout≥$3 · 30 sản phẩm · gen 2026-07-26 23:33</div>
-  <div class="controls">
-    <span style="color:var(--dim);font-size:12px">Sort:</span>
-    <button data-sort="score" class="on">Score</button>
-    <button data-sort="growth">Growth</button>
-    <button data-sort="rev">Revenue</button>
-    <button data-sort="creators">Creators ↑</button>
-    <input id="q" placeholder="Lọc theo tên…">
-  </div>
-</header>
-<div class="grid" id="grid">
-
-<div class="card" data-score="76.2" data-growth="999.9" data-creators="38.0" data-rev="57450.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#1</span><span class="score-badge">76.2</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732466334198240114&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">VEV Magnesium Gummies 90 Count, DeepCalm 14-in-1 Magnesium Complex with Ashwagandha, L-Theanine, D3 &amp; Zinc</a>
-    <div class="kpis">
-      <div class="kpi"><b>$39.99 - $59.99</b><span>price</span></div>
-      <div class="kpi"><b>$5.77</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$57k</b><span>rev 30d</span></div>
-      <div class="kpi hot"><b>1000%</b><span>growth</span></div>
-      <div class="kpi"><b>26d</b><span>launch</span></div>
-      <div class="kpi"><b>38</b><span>creators</span></div>
-      <div class="kpi"><b>4%</b><span>video rev</span></div>
+<h1>🌿 Health niche — 5 sản phẩm tiềm năng (TikTok US)</h1>
+<p class="sub">Tiêu chí: 30 ngày gần nhất · &lt;60 creators · growth &gt; 0 · payout ≥ $5 · loại thuốc dưỡng/mọc tóc & whey-gym · data harvest 2026-08-10 (Nutrition &amp; Wellness, sort Revenue).</p>
+<div class="grid">
+    <div class="card">
+      <div class="rk">#1</div>
+      <div class="sc">67.0</div>
+      <a class="nm" href="https://www.kalodata.com/product/detail?id=1732466334198240114&language=en-US&currency=USD&region=US&dateRange=%5B%222026-07-12%22%2C%222026-08-10%22%5D&cateValue=%5B%5D" target="_blank">VEV Magnesium Gummies 90 Count, DeepCalm 14-in-1 Magnesium Complex with Ashwagandha, L-Theanine, D3 & Zinc</a>
+      <div class="kpis">
+        <div><span>Growth 30d</span><b class="up">+59.2%</b></div>
+        <div><span>Creators</span><b>50</b></div>
+        <div><span>Payout/đơn</span><b>$5.88</b></div>
+        <div><span>Revenue 30d</span><b>$124,760</b></div>
+        <div><span>Giá bán</span><b>$29.41</b></div>
+        <div><span>Commission</span><b>20%</b></div>
+        <div><span>Launch</span><b>06/30/2026</b></div>
+        <div><span>Rank page</span><b>p14</b></div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="card" data-score="75.2" data-growth="56.5" data-creators="81.0" data-rev="61680.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#2</span><span class="score-badge">75.2</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732381179565871195&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Dr. CROWN Lymphatic Drainage Supplement for Women &amp; Men with Echinacea, Dandelion, Burdock, Cleavers &amp; More - 120 Capsules</a>
-    <div class="kpis">
-      <div class="kpi"><b>$24.99 - $54.99</b><span>price</span></div>
-      <div class="kpi"><b>$6.75</b><span>payout</span></div>
-      <div class="kpi"><b>28%</b><span>comm</span></div>
-      <div class="kpi"><b>$62k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>56%</b><span>growth</span></div>
-      <div class="kpi"><b>82d</b><span>launch</span></div>
-      <div class="kpi"><b>81</b><span>creators</span></div>
-      <div class="kpi"><b>73%</b><span>video rev</span></div>
+    <div class="card">
+      <div class="rk">#2</div>
+      <div class="sc">54.0</div>
+      <a class="nm" href="https://www.kalodata.com/product/detail?id=1732380582916166317&language=en-US&currency=USD&region=US&dateRange=%5B%222026-07-12%22%2C%222026-08-10%22%5D&cateValue=%5B%5D" target="_blank">Kellie’s Menopause Bundle: Collagen Powder, Astaxanthin, Omega-3 Fish Oil, Vitamin D3K2, Pumpkin Seed Oil & NMN Complex</a>
+      <div class="kpis">
+        <div><span>Growth 30d</span><b class="up">+84.8%</b></div>
+        <div><span>Creators</span><b>51</b></div>
+        <div><span>Payout/đơn</span><b>$19.19</b></div>
+        <div><span>Revenue 30d</span><b>$55,140</b></div>
+        <div><span>Giá bán</span><b>$127.94</b></div>
+        <div><span>Commission</span><b>15%</b></div>
+        <div><span>Launch</span><b>04/29/2026</b></div>
+        <div><span>Rank page</span><b>p35</b></div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="card" data-score="74.3" data-growth="15.1" data-creators="99.0" data-rev="68040.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#3</span><span class="score-badge">74.3</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732336411927613830&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Instant Aminos Tablets - EAA+BCAA - 9 Essential Amino Acids Supplement - Rapid Absorption, No Digestion Required - Supports Lean Muscle, Recovery &amp; Aging - 321% DIAAS Protein Score (1 Month)</a>
-    <div class="kpis">
-      <div class="kpi"><b>$31.49 - $178.45</b><span>price</span></div>
-      <div class="kpi"><b>$4.55</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$68k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>15%</b><span>growth</span></div>
-      <div class="kpi"><b>83d</b><span>launch</span></div>
-      <div class="kpi"><b>99</b><span>creators</span></div>
-      <div class="kpi"><b>92%</b><span>video rev</span></div>
+    <div class="card">
+      <div class="rk">#3</div>
+      <div class="sc">48.1</div>
+      <a class="nm" href="https://www.kalodata.com/product/detail?id=1729487904443765548&language=en-US&currency=USD&region=US&dateRange=%5B%222026-07-12%22%2C%222026-08-10%22%5D&cateValue=%5B%5D" target="_blank">Cheers Liver Combo | Restore + Protect | Support Your Liver & Feel Better After Drinking | DHM, L-Cysteine, Milk Thistle, Prickly Pear, B-Vitamins | 12 Doses Restore, 30 Doses Protect | Supplements</a>
+      <div class="kpis">
+        <div><span>Growth 30d</span><b class="up">+68.3%</b></div>
+        <div><span>Creators</span><b>18</b></div>
+        <div><span>Payout/đơn</span><b>$23.45</b></div>
+        <div><span>Revenue 30d</span><b>$57,580</b></div>
+        <div><span>Giá bán</span><b>$93.78</b></div>
+        <div><span>Commission</span><b>25%</b></div>
+        <div><span>Launch</span><b>07/17/2024</b></div>
+        <div><span>Rank page</span><b>p34</b></div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="card" data-score="72.6" data-growth="88.5" data-creators="75.0" data-rev="83870.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#4</span><span class="score-badge">72.6</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732287636147966637&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">NMN 2-Pack Value Bundle | More Support for Energy &amp; Aging</a>
-    <div class="kpis">
-      <div class="kpi"><b>$79.90</b><span>price</span></div>
-      <div class="kpi"><b>$8.99</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$84k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>88%</b><span>growth</span></div>
-      <div class="kpi"><b>130d</b><span>launch</span></div>
-      <div class="kpi"><b>75</b><span>creators</span></div>
-      <div class="kpi"><b>75%</b><span>video rev</span></div>
+    <div class="card">
+      <div class="rk">#4</div>
+      <div class="sc">43.6</div>
+      <a class="nm" href="https://www.kalodata.com/product/detail?id=1732043808719344152&language=en-US&currency=USD&region=US&dateRange=%5B%222026-07-12%22%2C%222026-08-10%22%5D&cateValue=%5B%5D" target="_blank">Purmeo 5-in-1 Targeted Balance Stomach & H.Pylori Dietary Probiotics Supplement - Vegan, 20B Cells, Daily Gut Health, Gastric Support, Digestive Comfort, Stomach Lining, Pylopass Lactobacillus reuteri DSM 17648, Healthcare</a>
+      <div class="kpis">
+        <div><span>Growth 30d</span><b class="up">+36.5%</b></div>
+        <div><span>Creators</span><b>48</b></div>
+        <div><span>Payout/đơn</span><b>$6.22</b></div>
+        <div><span>Revenue 30d</span><b>$58,090</b></div>
+        <div><span>Giá bán</span><b>$38.85</b></div>
+        <div><span>Commission</span><b>16%</b></div>
+        <div><span>Launch</span><b>11/25/2025</b></div>
+        <div><span>Rank page</span><b>p34</b></div>
+      </div>
     </div>
-  </div>
-</div>
-<div class="card" data-score="71.3" data-growth="27.2" data-creators="56.0" data-rev="41500.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#5</span><span class="score-badge">71.3</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732271426081361956&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">[FOODOLOGY] Coleology Cutting Jelly 30days - Garcinia Cambogia (HCA), Chia Seeds Collagen, Hyaluronic Acid, Pomegranate Flavored 8.81 oz /10 Sticks</a>
-    <div class="kpis">
-      <div class="kpi"><b>$50.40</b><span>price</span></div>
-      <div class="kpi"><b>$9.10</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$42k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>27%</b><span>growth</span></div>
-      <div class="kpi"><b>157d</b><span>launch</span></div>
-      <div class="kpi"><b>56</b><span>creators</span></div>
-      <div class="kpi"><b>94%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="69.4" data-growth="51.0" data-creators="82.0" data-rev="49130.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#6</span><span class="score-badge">69.4</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732062343540741114&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">OxyShred + Acetyl L-Carnitine Focus Stack | Pre-Workout Energy + Amino Acid | Energy &amp; Focus Support | Daily Performance &amp; Training Combo</a>
-    <div class="kpis">
-      <div class="kpi"><b>$74.90</b><span>price</span></div>
-      <div class="kpi"><b>$13.37</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$49k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>51%</b><span>growth</span></div>
-      <div class="kpi"><b>251d</b><span>launch</span></div>
-      <div class="kpi"><b>82</b><span>creators</span></div>
-      <div class="kpi"><b>92%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="69.0" data-growth="69.9" data-creators="52.0" data-rev="122900.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#7</span><span class="score-badge">69.0</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731319850523857365&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">VivoNu Cayenne Pepper Softgels Supplement 240 Count with Vitamin E D3 K2 &amp; Extracts of Grape Seed Hawthorn Beetroot for Leg Vein Heart Blood Vessel Health - Healthcare</a>
-    <div class="kpis">
-      <div class="kpi"><b>$39.90 - $139.90</b><span>price</span></div>
-      <div class="kpi"><b>$7.54</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$123k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>70%</b><span>growth</span></div>
-      <div class="kpi"><b>391d</b><span>launch</span></div>
-      <div class="kpi"><b>52</b><span>creators</span></div>
-      <div class="kpi"><b>100%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="68.5" data-growth="279.6" data-creators="28.0" data-rev="73460.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#8</span><span class="score-badge">68.5</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732159997953872600&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">CORETRIBE Cordyceps Militaris Mushroom Extract Capsules Strength &amp; Focus Support Vegan Non-GMO 30 Count Superfood Supplement for Health &amp; Wellness</a>
-    <div class="kpis">
-      <div class="kpi"><b>$199.99 - $699.99</b><span>price</span></div>
-      <div class="kpi"><b>$15.74</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$73k</b><span>rev 30d</span></div>
-      <div class="kpi hot"><b>280%</b><span>growth</span></div>
-      <div class="kpi"><b>208d</b><span>launch</span></div>
-      <div class="kpi"><b>28</b><span>creators</span></div>
-      <div class="kpi"><b>58%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="65.9" data-growth="45.3" data-creators="89.0" data-rev="51790.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#9</span><span class="score-badge">65.9</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1729477497020977621&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">1st Phorm Collagen with Dermaval | Anti-Aging &amp; Joint Support</a>
-    <div class="kpis">
-      <div class="kpi"><b>$57.99</b><span>price</span></div>
-      <div class="kpi"><b>$11.60</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$52k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>45%</b><span>growth</span></div>
-      <div class="kpi"><b>733d</b><span>launch</span></div>
-      <div class="kpi"><b>89</b><span>creators</span></div>
-      <div class="kpi"><b>86%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="65.6" data-growth="14.5" data-creators="30.0" data-rev="38210.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#10</span><span class="score-badge">65.6</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731283915421553120&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">MuscleMeds CARNIVOR MASS, 50g High Calorie Beef Protein, 6lb</a>
-    <div class="kpis">
-      <div class="kpi"><b>$59.99</b><span>price</span></div>
-      <div class="kpi"><b>$12.00</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$38k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>14%</b><span>growth</span></div>
-      <div class="kpi"><b>363d</b><span>launch</span></div>
-      <div class="kpi"><b>30</b><span>creators</span></div>
-      <div class="kpi"><b>99%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="63.8" data-growth="14.9" data-creators="53.0" data-rev="49060.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#11</span><span class="score-badge">63.8</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732124601161257118&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Actual Superfoods Organic High Flavanol Cacao Powder Chocolate - Single Origin, Non-Alkalised, with Lion&#x27;s Mane, Maca, Ashwagandha, Ceylon Cinnamon - Heart-Healthy Beverage, Coffee Alternative - 30-Servings Wellness Supplement</a>
-    <div class="kpis">
-      <div class="kpi"><b>$69.99</b><span>price</span></div>
-      <div class="kpi"><b>$12.10</b><span>payout</span></div>
-      <div class="kpi"><b>30%</b><span>comm</span></div>
-      <div class="kpi"><b>$49k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>15%</b><span>growth</span></div>
-      <div class="kpi"><b>225d</b><span>launch</span></div>
-      <div class="kpi"><b>53</b><span>creators</span></div>
-      <div class="kpi"><b>97%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="62.4" data-growth="20.8" data-creators="71.0" data-rev="52600.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#12</span><span class="score-badge">62.4</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1729789934479708612&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Zahler ParaGuard Liquid Drops 4 oz Herbal Cleanse with Wormwood Garlic Bulb Clove Pumpkin Seed Non-GMO for Digestive Support &amp; Gut Health Supplement - Dietary</a>
-    <div class="kpis">
-      <div class="kpi"><b>$29.95</b><span>price</span></div>
-      <div class="kpi"><b>$3.99</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$53k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>21%</b><span>growth</span></div>
-      <div class="kpi"><b>622d</b><span>launch</span></div>
-      <div class="kpi"><b>71</b><span>creators</span></div>
-      <div class="kpi"><b>82%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="61.8" data-growth="95.1" data-creators="96.0" data-rev="345600.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#13</span><span class="score-badge">61.8</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731987166975988420&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Comparable to 20g Protein, Only 5 Calories, Sugar-Free, Dairy-Free, 1,000 IU Vitamin D3 for Muscle Support, Essential Amino Acids EAA+BCAA Drink Mix Stick Packs, Perfect Alternative to Whey Protein, Clear Protein &amp; Protein Powder, Rejuvenate Muscle Health</a>
-    <div class="kpis">
-      <div class="kpi"><b>$34.99 - $49.99</b><span>price</span></div>
-      <div class="kpi"><b>$5.18</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$346k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>95%</b><span>growth</span></div>
-      <div class="kpi"><b>148d</b><span>launch</span></div>
-      <div class="kpi"><b>96</b><span>creators</span></div>
-      <div class="kpi"><b>10%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="60.6" data-growth="63.4" data-creators="88.0" data-rev="56170.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#14</span><span class="score-badge">60.6</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732125485465571419&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Dr. CROWN Liver Support Supplement for Cleanse, Detox &amp; Repair with Milk Thistle, NAC, ALA &amp; Turmeric - 120 Capsules</a>
-    <div class="kpis">
-      <div class="kpi"><b>$49.99 - $109.99</b><span>price</span></div>
-      <div class="kpi"><b>$6.57</b><span>payout</span></div>
-      <div class="kpi"><b>25%</b><span>comm</span></div>
-      <div class="kpi"><b>$56k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>63%</b><span>growth</span></div>
-      <div class="kpi"><b>230d</b><span>launch</span></div>
-      <div class="kpi"><b>88</b><span>creators</span></div>
-      <div class="kpi"><b>46%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="60.0" data-growth="168.2" data-creators="76.0" data-rev="52250.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#15</span><span class="score-badge">60.0</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731744678086939419&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Serene Herbs 16 Day Soursop Reset | Organic Herbal Detox Cortisol Bundle Gut Healthy Booster Immune Support &amp; Energy | Non-GMO, Vegan (32 fl oz, 16 fl oz Each)</a>
-    <div class="kpis">
-      <div class="kpi"><b>$104.99</b><span>price</span></div>
-      <div class="kpi"><b>$8.74</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$52k</b><span>rev 30d</span></div>
-      <div class="kpi hot"><b>168%</b><span>growth</span></div>
-      <div class="kpi"><b>316d</b><span>launch</span></div>
-      <div class="kpi"><b>76</b><span>creators</span></div>
-      <div class="kpi"><b>27%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="59.9" data-growth="20.4" data-creators="92.0" data-rev="37850.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#16</span><span class="score-badge">59.9</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731387005590016719&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">OMNI Creatine Monohydrate Gummies - Supports Muscle Growth Recovery &amp; Brain Function - 1g per Gummy Low Sugar - 90 Count - Watermelon &amp; Peach Flavor - Natural Fuel Supplements Fitness</a>
-    <div class="kpis">
-      <div class="kpi"><b>$35.99</b><span>price</span></div>
-      <div class="kpi"><b>$9.41</b><span>payout</span></div>
-      <div class="kpi"><b>30%</b><span>comm</span></div>
-      <div class="kpi"><b>$38k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>20%</b><span>growth</span></div>
-      <div class="kpi"><b>354d</b><span>launch</span></div>
-      <div class="kpi"><b>92</b><span>creators</span></div>
-      <div class="kpi"><b>78%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="59.4" data-growth="6.8" data-creators="20.0" data-rev="40670.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#17</span><span class="score-badge">59.4</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731383869623210678&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Total Male 3-in-1 Alpha Blend Vitality Nitric Oxide Cognitive Function Supports Vitality Blood Flow Muscle Stamina Mental Focus Shilajit Tongkat Ali Turkesterone Arginine Citrulline Natural Fitness Supplement - Black Friday Gifts for Men</a>
-    <div class="kpis">
-      <div class="kpi"><b>$65.95</b><span>price</span></div>
-      <div class="kpi"><b>$5.14</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$41k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>7%</b><span>growth</span></div>
-      <div class="kpi"><b>389d</b><span>launch</span></div>
-      <div class="kpi"><b>20</b><span>creators</span></div>
-      <div class="kpi"><b>84%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="58.5" data-growth="143.7" data-creators="9.0" data-rev="48880.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#18</span><span class="score-badge">58.5</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1730629730370228314&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">3 Pack of Cocó March Silk Face Collagen - Formulated for Face &amp; Neck | Sericin-Activated Ultra Low Molecular Weight Collagen – Supports Skin Elasticity and Smooth Appearance – 14g Protein – 15.87 oz (450g) NO Taste-Dissolves Instantly</a>
-    <div class="kpis">
-      <div class="kpi"><b>$119.91</b><span>price</span></div>
-      <div class="kpi"><b>$17.97</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$49k</b><span>rev 30d</span></div>
-      <div class="kpi hot"><b>144%</b><span>growth</span></div>
-      <div class="kpi"><b>533d</b><span>launch</span></div>
-      <div class="kpi"><b>9</b><span>creators</span></div>
-      <div class="kpi"><b>35%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="57.7" data-growth="3.5" data-creators="92.0" data-rev="44300.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#19</span><span class="score-badge">57.7</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731837338720571861&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">VivoNu Lymphatic - Supports Lymphatic Circulation | Key Ingredients: Echinacea, Dandelion, Nettle, Burdock, Calendula, Red Clover | 240 Capsules | Supports Immune System &amp; Metabolism</a>
-    <div class="kpis">
-      <div class="kpi"><b>$39.90</b><span>price</span></div>
-      <div class="kpi"><b>$5.12</b><span>payout</span></div>
-      <div class="kpi"><b>25%</b><span>comm</span></div>
-      <div class="kpi"><b>$44k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>4%</b><span>growth</span></div>
-      <div class="kpi"><b>302d</b><span>launch</span></div>
-      <div class="kpi"><b>92</b><span>creators</span></div>
-      <div class="kpi"><b>91%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="57.3" data-growth="40.5" data-creators="17.0" data-rev="39400.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#20</span><span class="score-badge">57.3</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732312769657869219&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">HerAure 20-in-1 Magnesium Complex 1685mg - BrainFog Relief, Reduce Overthinking &amp; Calm Mind, StressRelief &amp; Sleep Comfort, Digestion, Muscle &amp; EnergySupport, 12 Forms of Magnesium, B6, Zinc &amp; SlipperyElm, beach essentials, Deals For You Days，G summeressen</a>
-    <div class="kpis">
-      <div class="kpi"><b>$24.99 - $69.99</b><span>price</span></div>
-      <div class="kpi"><b>$4.72</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$39k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>40%</b><span>growth</span></div>
-      <div class="kpi"><b>111d</b><span>launch</span></div>
-      <div class="kpi"><b>17</b><span>creators</span></div>
-      <div class="kpi"><b>16%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="56.0" data-growth="5.2" data-creators="72.0" data-rev="38520.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#21</span><span class="score-badge">56.0</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1729475463526781738&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Primeval Labs Creatine Monohydrate Powder - 120 Servings and Travel Sticks, Agua Fresca Flavors, Zero Sugar</a>
-    <div class="kpis">
-      <div class="kpi"><b>$25.00 - $40.00</b><span>price</span></div>
-      <div class="kpi"><b>$3.58</b><span>payout</span></div>
-      <div class="kpi"><b>18%</b><span>comm</span></div>
-      <div class="kpi"><b>$39k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>5%</b><span>growth</span></div>
-      <div class="kpi"><b>809d</b><span>launch</span></div>
-      <div class="kpi"><b>72</b><span>creators</span></div>
-      <div class="kpi"><b>86%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="55.8" data-growth="999.9" data-creators="51.0" data-rev="109760.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#22</span><span class="score-badge">55.8</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1729437690943934741&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Yes You Can! Organic Pure Greens Drink Booster - Nutrient-Rich Powder Mix with Alfalfa Grass, Wheatgrass, Kale, Barley Grass, Lemon Juice Powder - Packed with Antioxidants, Vitamins, and Minerals</a>
-    <div class="kpis">
-      <div class="kpi"><b>$71.02</b><span>price</span></div>
-      <div class="kpi"><b>$10.16</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$110k</b><span>rev 30d</span></div>
-      <div class="kpi hot"><b>1000%</b><span>growth</span></div>
-      <div class="kpi"><b>902d</b><span>launch</span></div>
-      <div class="kpi"><b>51</b><span>creators</span></div>
-      <div class="kpi"><b>1%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="54.1" data-growth="77.3" data-creators="68.0" data-rev="88200.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#23</span><span class="score-badge">54.1</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731598904067068903&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Selerb NAD+ Supplement for Men with NMN - Liposomal Complex with Trans-Resveratrol, CoQ10, Maca &amp; Ashwagandha - Supports Cellular Renewal, Energy &amp; Performance - 60 Capsules Dietary Healthcare Vitamins</a>
-    <div class="kpis">
-      <div class="kpi"><b>$35.00 - $78.88</b><span>price</span></div>
-      <div class="kpi"><b>$4.76</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$88k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>77%</b><span>growth</span></div>
-      <div class="kpi"><b>349d</b><span>launch</span></div>
-      <div class="kpi"><b>68</b><span>creators</span></div>
-      <div class="kpi"><b>17%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="53.8" data-growth="91.7" data-creators="77.0" data-rev="38300.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#24</span><span class="score-badge">53.8</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731839904411783757&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">VivoNu Lymphatic- Supports Lymphatic Circulation | Detox &amp; Reduces Swelling | Key Ingredients: Echinacea, Dandelion, Nettle, Burdock, Calendula, Red Clover | 240 Capsules | Supports Immune System &amp; Metabolism SummerVibes</a>
-    <div class="kpis">
-      <div class="kpi"><b>$22.90 - $62.90</b><span>price</span></div>
-      <div class="kpi"><b>$3.59</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$38k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>92%</b><span>growth</span></div>
-      <div class="kpi"><b>301d</b><span>launch</span></div>
-      <div class="kpi"><b>77</b><span>creators</span></div>
-      <div class="kpi"><b>11%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="53.7" data-growth="13.1" data-creators="96.0" data-rev="68400.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#25</span><span class="score-badge">53.7</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1729507519872342009&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Double MaxCalm - 2 Pack MaxCalm Relaxing Drink Mix Bundle - Anti Stress Drink Mix - With Ionic Magnesium Citrate + Glycinate - Raspberry Lemon Flavor</a>
-    <div class="kpis">
-      <div class="kpi"><b>$38.99</b><span>price</span></div>
-      <div class="kpi"><b>$5.73</b><span>payout</span></div>
-      <div class="kpi"><b>15%</b><span>comm</span></div>
-      <div class="kpi"><b>$68k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>13%</b><span>growth</span></div>
-      <div class="kpi"><b>136d</b><span>launch</span></div>
-      <div class="kpi"><b>96</b><span>creators</span></div>
-      <div class="kpi"><b>34%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="53.6" data-growth="9.6" data-creators="91.0" data-rev="39310.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#26</span><span class="score-badge">53.6</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731302711526265751&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">HiPlus NAD Supplement Berry Flavor Drink 1400 mg Urolithin a Extra Strength Liposomal, Green Tea + Astaxanthin for Women &amp; Men, Resveratrol, CoQ10, Alpha Lipoic Acid – Energy Beauty Healthcare Anti-Aging –20 Pockets</a>
-    <div class="kpis">
-      <div class="kpi"><b>$19.98</b><span>price</span></div>
-      <div class="kpi"><b>$4.12</b><span>payout</span></div>
-      <div class="kpi"><b>26%</b><span>comm</span></div>
-      <div class="kpi"><b>$39k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>10%</b><span>growth</span></div>
-      <div class="kpi"><b>404d</b><span>launch</span></div>
-      <div class="kpi"><b>91</b><span>creators</span></div>
-      <div class="kpi"><b>63%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="51.6" data-growth="53.2" data-creators="86.0" data-rev="48460.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#27</span><span class="score-badge">51.6</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1732017048010920608&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">[brendaayala Exclusive] LeeFar Her Juicy Feminine Probiotics Gummies + LeeFar Cutting Mix + LeeFar Her Fresh Intimate Skin Spray</a>
-    <div class="kpis">
-      <div class="kpi"><b>$105.73</b><span>price</span></div>
-      <div class="kpi"><b>$10.03</b><span>payout</span></div>
-      <div class="kpi"><b>20%</b><span>comm</span></div>
-      <div class="kpi"><b>$48k</b><span>rev 30d</span></div>
-      <div class="kpi warm"><b>53%</b><span>growth</span></div>
-      <div class="kpi"><b>264d</b><span>launch</span></div>
-      <div class="kpi"><b>86</b><span>creators</span></div>
-      <div class="kpi"><b>0%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="51.4" data-growth="0.2" data-creators="69.0" data-rev="41690.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#28</span><span class="score-badge">51.4</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731898727935283829&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Happy V Fresh Start Kit: Vaginal Prebiotic + Probiotic for Women + Happy V Liquid Chlorophyll Natural Dietary Supplement Boost Mint Healthcare Wellness Edible</a>
-    <div class="kpis">
-      <div class="kpi"><b>$66.50</b><span>price</span></div>
-      <div class="kpi"><b>$5.19</b><span>payout</span></div>
-      <div class="kpi"><b>10%</b><span>comm</span></div>
-      <div class="kpi"><b>$42k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>0%</b><span>growth</span></div>
-      <div class="kpi"><b>289d</b><span>launch</span></div>
-      <div class="kpi"><b>69</b><span>creators</span></div>
-      <div class="kpi"><b>88%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="44.0" data-growth="2.8" data-creators="47.0" data-rev="39830.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#29</span><span class="score-badge">44.0</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1731481178363761325&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Micro Ingredients Liposomal NAD+ Ultimate 1,000mg, 60 Veggie Capsules</a>
-    <div class="kpis">
-      <div class="kpi"><b>$24.95</b><span>price</span></div>
-      <div class="kpi"><b>$5.23</b><span>payout</span></div>
-      <div class="kpi"><b>25%</b><span>comm</span></div>
-      <div class="kpi"><b>$40k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>3%</b><span>growth</span></div>
-      <div class="kpi"><b>351d</b><span>launch</span></div>
-      <div class="kpi"><b>47</b><span>creators</span></div>
-      <div class="kpi"><b>22%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-<div class="card" data-score="43.9" data-growth="10.4" data-creators="93.0" data-rev="39350.0">
-  <div class="body">
-    <div class="chead"><span class="rank">#30</span><span class="score-badge">43.9</span></div>
-    <a class="title" href="https://www.kalodata.com/product/detail?id=1729532735437181654&amp;language=en-US&amp;currency=USD&amp;region=US&amp;dateRange=%5B%222026-06-27%22%2C%222026-07-26%22%5D&amp;cateValue=%5B%5D" target="_blank" rel="noopener">Men&#x27;s Health Supplement by O Positiv</a>
-    <div class="kpis">
-      <div class="kpi"><b>$44.99</b><span>price</span></div>
-      <div class="kpi"><b>$4.64</b><span>payout</span></div>
-      <div class="kpi"><b>25%</b><span>comm</span></div>
-      <div class="kpi"><b>$39k</b><span>rev 30d</span></div>
-      <div class="kpi mild"><b>10%</b><span>growth</span></div>
-      <div class="kpi"><b>753d</b><span>launch</span></div>
-      <div class="kpi"><b>93</b><span>creators</span></div>
-      <div class="kpi"><b>33%</b><span>video rev</span></div>
-    </div>
-  </div>
-</div>
-</div>
-<footer>Kalodata potential-products · click title → mở Kalodata detail</footer>
-<script>
-const grid=document.getElementById('grid');
-const cards=[...grid.children];
-function sortBy(k,asc){
-  cards.sort((a,b)=>{const x=+a.dataset[k],y=+b.dataset[k];return asc?x-y:y-x;});
-  cards.forEach(c=>grid.appendChild(c));
-}
-document.querySelectorAll('[data-sort]').forEach(btn=>btn.onclick=()=>{
-  document.querySelectorAll('[data-sort]').forEach(b=>b.classList.remove('on'));
-  btn.classList.add('on');
-  sortBy(btn.dataset.sort, btn.dataset.sort==='creators');
-});
-document.getElementById('q').oninput=e=>{
-  const v=e.target.value.toLowerCase();
-  cards.forEach(c=>{c.style.display=c.querySelector('.title').textContent.toLowerCase().includes(v)?'':'none';});
-};
-</script>
+    <div class="card">
+      <div class="rk">#5</div>
+      <div class="sc">26.5</div>
+      <a class="nm" href="https://www.kalodata.com/product/detail?id=1730052122365432468&language=en-US&currency=USD&region=US&dateRange=%5B%222026-07-12%22%2C%222026-08-10%22%5D&cateValue=%5B%5D" target="_blank">True Sea Moss Gel 2-Jar Bundle: Mango-Pineapple & Strawberry – Rich in Essential Minerals & Vitamins – supports overall vitality</a>
+      <div class="kpis">
+        <div><span>Growth 30d</span><b class="up">+3.2%</b></div>
+        <div><span>Creators</span><b>7</b></div>
+        <div><span>Payout/đơn</span><b>$10.8</b></div>
+        <div><span>Revenue 30d</span><b>$46,170</b></div>
+        <div><span>Giá bán</span><b>$72.03</b></div>
+        <div><span>Commission</span><b>15%</b></div>
+        <div><span>Launch</span><b>11/25/2024</b></div>
+        <div><span>Rank page</span><b>p41</b></div>
+      </div>
+    </div></div>
+<footer>Nguồn: Kalodata · account Hasap · sắp theo growth + revenue + độ mới. Chỉ có 6 sản phẩm &lt;60 creators trong ngách; đã bỏ 1 con growth ~0%.</footer>
 </body></html>
